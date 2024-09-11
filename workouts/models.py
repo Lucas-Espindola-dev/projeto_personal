@@ -1,6 +1,17 @@
 from django.db import models
 
 
+class Workout(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.TextField(blank=True, null=True)
+    date_created = models.DateTimeField(auto_now_add=True)
+
+    exercises = models.ManyToManyField('Exercises', related_name='workouts')
+    cardio = models.ManyToManyField('Cardio', related_name='workouts')
+    stretchings = models.ManyToManyField('Stretchings', related_name='workouts')
+    mobility = models.ManyToManyField('Mobility', related_name='workouts')
+
+
 class Exercise(models.Model):
     name = models.CharField(max_length=255)
     sets = models.IntegerField()
