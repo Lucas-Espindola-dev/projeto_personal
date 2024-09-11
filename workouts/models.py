@@ -7,7 +7,6 @@ class Exercise(models.Model):
     repetitions = models.IntegerField()
     instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
-    workout = models.ForeignKey
 
     def __str__(self):
         return self.name
@@ -19,7 +18,6 @@ class Cardio(models.Model):
     kcal = models.IntegerField(blank=True, null=True)
     instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
-    workout = models.ForeignKey
 
     def __str__(self):
         return self.name
@@ -30,7 +28,6 @@ class Stretching(models.Model):
     time = models.TimeField()
     instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
-    workout = models.ForeignKey
 
     def __str__(self):
         return self.name
@@ -42,7 +39,6 @@ class Mobility(models.Model):
     repetitions = models.IntegerField()
     instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
-    workout = models.ForeignKey
 
     def __str__(self):
         return self.name
