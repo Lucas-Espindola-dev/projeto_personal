@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Exercises(models.Model):
+class Exercise(models.Model):
     name = models.CharField(max_length=255)
     sets = models.IntegerField()
     repetitions = models.IntegerField()
@@ -25,7 +25,7 @@ class Cardio(models.Model):
         return self.name
 
 
-class Stretchings(models.Model):
+class Stretching(models.Model):
     name = models.CharField(max_length=255)
     time = models.TimeField()
     instructional_video = models.URLField(max_length=255)
