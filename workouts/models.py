@@ -5,7 +5,7 @@ class Exercises(models.Model):
     name = models.CharField(max_length=255)
     sets = models.IntegerField()
     repetitions = models.IntegerField()
-    instructional_video = models.CharField(max_length=255)
+    instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
 
@@ -17,7 +17,7 @@ class Cardio(models.Model):
     name = models.CharField(max_length=255)
     time = models.IntegerField(blank=True, null=True)
     kcal = models.IntegerField(blank=True, null=True)
-    instructional_video = models.CharField(max_length=255)
+    instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
 
@@ -28,7 +28,7 @@ class Cardio(models.Model):
 class Stretchings(models.Model):
     name = models.CharField(max_length=255)
     time = models.TimeField()
-    instructional_video = models.CharField(max_length=255)
+    instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
 
@@ -41,7 +41,7 @@ class Mobility(models.Model):
     sets = models.IntegerField()
     repetitions = models.IntegerField()
     time = models.TimeField()
-    instructional_video = models.CharField(max_length=255)
+    instructional_video = models.URLField(max_length=255)
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
 
