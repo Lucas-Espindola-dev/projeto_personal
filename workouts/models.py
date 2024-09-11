@@ -9,6 +9,9 @@ class Exercises(models.Model):
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
 
+    def __str__(self):
+        return self.name
+
 
 class Cardio(models.Model):
     name = models.CharField(max_length=255)
@@ -18,6 +21,9 @@ class Cardio(models.Model):
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
 
+    def __str__(self):
+        return self.name
+
 
 class Stretchings(models.Model):
     name = models.CharField(max_length=255)
@@ -25,6 +31,9 @@ class Stretchings(models.Model):
     instructional_video = models.CharField(max_length=255)
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
+
+    def __str__(self):
+        return self.name
 
 
 class Mobility(models.Model):
@@ -35,4 +44,7 @@ class Mobility(models.Model):
     instructional_video = models.CharField(max_length=255)
     comments = models.TextField(blank=True, null=True)
     workout = models.ForeignKey
+
+    def __str__(self):
+        return self.name
 
