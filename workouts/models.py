@@ -11,6 +11,27 @@ class Workout(models.Model):
     stretchings = models.ManyToManyField('Stretchings', related_name='workouts')
     mobility = models.ManyToManyField('Mobility', related_name='workouts')
 
+    def __str__(self):
+        return self.name
+
+    def total_exercises(self):
+        return self.exercises.count()  # Call count() on the related manager
+
+    def total_cardio(self):
+        return self.cardio.count()
+
+    def total_stretchings(self):
+        return self.stretchings.count()
+
+    def total_mobility(self):
+        return self.mobility.count()
+
+    def total_workout_items(self):
+        return (self.total_exercises() +
+                self.total_cardio() +
+                self.total_stretchings() +
+                self.total_mobility())
+
 
 class Exercise(models.Model):
     name = models.CharField(max_length=255)
