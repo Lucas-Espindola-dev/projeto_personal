@@ -6,9 +6,9 @@ class Workout(models.Model):
     description = models.TextField(blank=True, null=True)
     date_created = models.DateTimeField(auto_now_add=True)
 
-    exercises = models.ManyToManyField('Exercises', related_name='workouts')
+    exercises = models.ManyToManyField('Exercise', related_name='workouts')
     cardio = models.ManyToManyField('Cardio', related_name='workouts')
-    stretchings = models.ManyToManyField('Stretchings', related_name='workouts')
+    stretchings = models.ManyToManyField('Stretching', related_name='workouts')
     mobility = models.ManyToManyField('Mobility', related_name='workouts')
 
     def __str__(self):
