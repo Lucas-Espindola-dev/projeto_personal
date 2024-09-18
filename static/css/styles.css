@@ -70,4 +70,26 @@ nav {
 
 /* Main Banner */
 
+.main-banner {
+    background-image: url(../img/Banner.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0; 
+}
+
+.main-banner h1,
+.main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1 {
+    font-size: 48px;
+}
+
+.main-banner p {
+    font-size: 27px;
+}
 
