@@ -93,6 +93,8 @@ nav {
     font-size: 27px;
 }
 
+/* Services */
+
 .services-container {
     padding: 5rem 0;
 }
@@ -134,3 +136,20 @@ nav {
 .services-container p{
     line-height: 24px;
 }
+
+/* Prices and plans*/
+
+.pricing-container {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.pricing-container h2{
+    font-size: 36px;
+}
+
+.pricing-container p{
+    font-size: 20px;
+}
+
+
