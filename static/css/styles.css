@@ -158,3 +158,29 @@ nav {
     width: 90%;
     margin: 50px auto 0;
 }
+
+.plan {
+    flex: 1;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 20px;
+    background-color: #e8e9ea;
+    padding: 20px;
+    line-height: 1.2;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+plan ul{
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    padding: 10px 15px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.plan .price
