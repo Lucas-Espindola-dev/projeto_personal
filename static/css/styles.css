@@ -209,3 +209,12 @@ plan ul{
     background-color: #202b34;
     padding: 50px 0;
 }
+
+.plan .plan-btn {
+    background-color: #2cc762;
+    color: #fff;
+    font-size: 24px;
+    height: 70px;
+    line-height: 50px;
+    cursor: pointer;
+}
