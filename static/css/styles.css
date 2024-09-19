@@ -218,3 +218,12 @@ plan ul{
     line-height: 50px;
     cursor: pointer;
 }
+
+footer {
+    background-color: rgba(95, 94, 94, 0.61);
+    padding: 20px;
+    text-align: center;
+}
+footer p{
+    color: #111;
+}
