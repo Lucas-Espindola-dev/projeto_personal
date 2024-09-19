@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     box-sizing: border-box;
 }
 
@@ -139,8 +139,8 @@ nav {
 
 /* Prices and plans*/
 
-.pricing-container {
-    padding-bottom: 5px;
+.pricing-container{
+    padding-bottom: 5rem;
     text-align: center;
 }
 
@@ -152,4 +152,9 @@ nav {
     font-size: 20px;
 }
 
-
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
